@@ -22,6 +22,8 @@
 					<li><a href="red.php" title="Learn about red blocks">Red Blocks</a></li>
 					<li><a href="blue.php" title="Learn about blue blocks">Blue Blocks</a></li>
 					<li><a href="yellow.php" title="Learn about yellow blocks">Yellow Blocks</a></li>
+					<li><a href="green.php" title="Learn about green blocks">Green Blocks</a></li>
+					<li><a href="about.php" title="About the page">About</a></li>
 <!-- STEP 5b: Upload this changed file, and try it in the browser - then go back to index.php for STEP 6 -->
 				</ul>
 			</nav>
@@ -44,9 +46,11 @@
 		<footer>
 			<nav>
 				<a href="about/privacy-policy.php" title="Read our Privacy Policy">Privacy Policy</a> | <a href="about/privacy-policy.php#personal-information" title="Learn about how we treat your personal information">Use of Personal Information</a>
+				<a href="about/terms-of-use.php" title="Read our terms ouf use">Terms of use</a>
+				<a href="about/terms-of-use.php#limitation-liability" title="Read our terms ouf use liability">Terms of use liability</a>
 			</nav>
 			<p><small>© HTML, CSS, and JS Blocks Inc.</small></p>
-			<link rel="stylesheet" href="\about\terms-of-use.php">
+
 		</footer>
 	</body>
 </html>

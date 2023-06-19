@@ -21,6 +21,8 @@
 					<li><a href="red.php" title="Learn about red blocks">Red Blocks</a></li>
 					<li><a href="blue.php" title="Learn about blue blocks">Blue Blocks</a></li>
 					<li><a href="yellow.php" title="Learn about yellow blocks">Yellow Blocks</a></li>
+					<li><a href="green.php" title="Learn about green blocks">Green Blocks</a></li>
+					<li><a href="about.php" title="About the page">About</a></li>
 				</ul>
 			</nav>
 <!-- STEP 4a: Let's build a list of hyperlinks inside the above NAV element linking this page to other pages in the site - create an unordered list element (UL) -->
@@ -89,12 +91,14 @@
 <!-- STEP 8a: Create a NAV element in the FOOTER for the legal stuff -->
 			<nav>
 				<a href="about/privacy-policy.php" title="Read our Privacy Policy">Privacy Policy</a> | <a href="about/privacy-policy.php#personal-information" title="Learn about how we treat your personal information">Use of Personal Information</a>
+				<a href="about/terms-of-use.php" title="Read our terms ouf use">Terms of use</a>
+				<a href="about/terms-of-use.php#limitation-liability" title="Read our terms ouf use liability">Terms of use liability</a>
 			</nav>
 <!-- STEP 8b: Build a link to the page 'Privacy Policy' - note that the href will need to be a relative path that points from this page, down into the 'about' folder -->
 <!-- STEP 8c: Construct a second link that takes the visitor to the element with the id="personal-information" on the very same page, by appending the id value to the URL with a hash symbol (#personal-information) - this is called page-level navigation -->
 <!-- STEP 8d: Try it in your browser, then proceed to about/privacy-policy.php in your code editor for the next step -->
-			<p><small>© HTML, CSS, and JS Blocks Inc.</small></p>
-			<link rel="stylesheet" href="\about\terms-of-use.php">
+<p><small>© HTML, CSS, and JS Blocks Inc.</small></p>
+
 		</footer>
 	</body>
 </html>

@@ -30,7 +30,6 @@
 		<!-- Page-level footer -->
 		<footer>
 			<p><small>© HTML, CSS, and JS Blocks Inc.</small></p>
-			<link rel="stylesheet" href="\about\terms-of-use.php">
 		</footer>
 	</body>
 </html>
