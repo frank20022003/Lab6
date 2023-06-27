@@ -14,17 +14,9 @@
 			<img src="images/html-logo.svg" height="75" width="75" alt="HTML" />
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
-			<!-- Global site navigation -->
-			<nav>
-				<ul>
-					<li><a href="index.php" title="Go to the Home page">Home</a></li>
-					<li><a href="red.php" title="Learn about red blocks">Red Blocks</a></li>
-					<li><a href="blue.php" title="Learn about blue blocks">Blue Blocks</a></li>
-					<li><a href="yellow.php" title="Learn about yellow blocks">Yellow Blocks</a></li>
-					<li><a href="about.php" title="About page">About</a></li>
-				</ul>
-				<link rel="Lego page" href="https://www.lego.com/en-ca/themes/disney/100-years?icmp=HP-SHQL-Standard-DI_QL_Disney_100_Key_Beat_23_HP-P-DI-8YE6A6K1NQ">
-			</nav>
+<?php
+	include("includes/global-nav.php");
+?>
 		</header>
 		<!-- Page-level main content -->
 		<main>
@@ -42,10 +34,9 @@
 		</main>
 		<!-- Page-level footer -->
 		<footer>
+			<!-- Fine print navigation -->
 			<nav>
-				<a href="about/privacy-policy.php" title="Read our Privacy Policy">Privacy Policy</a> | <a href="about/privacy-policy.php#personal-information" title="Learn about how we treat your personal information">Use of Personal Information</a>
-				<a href="about/terms-of-use.php" title="Read our terms ouf use">Terms of use</a>
-				<a href="about/terms-of-use.php#limitation-liability" title="Read our terms ouf use liability">Terms of use liability</a>
+				<a href="about/privacy-policy.php" title="Read our Privacy Policy">Privacy Policy</a> | <a href="about/privacy-policy.php#personal-information" title="Learn about how we treat your personal information">Use of Personal Information</a> | <a href="about/terms-of-use.php" title="Understand our Terms of Use">Terms of Use</a> | <a href="about/terms-of-use.php#limitation-liability" title="Our Limitation of Liability explained">Limitation of Liability</a>
 			</nav>
 			<p><small>© HTML, CSS, and JS Blocks Inc.</small></p>
 		</footer>

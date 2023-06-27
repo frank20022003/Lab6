@@ -14,23 +14,19 @@
  			<img src="images/html-logo.svg" height="75" width="75" alt="HTML" />
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
-<!-- STEP 3: Build a NAV element for global Web site navigation -->
-			<nav>
-				<ul>
-					<li><a href="index.php" title="Go to the Home page">Home</a></li>
-					<li><a href="red.php" title="Learn about red blocks">Red Blocks</a></li>
-					<li><a href="blue.php" title="Learn about blue blocks">Blue Blocks</a></li>
-					<li><a href="yellow.php" title="Learn about yellow blocks">Yellow Blocks</a></li>
-					<li><a href="green.php" title="Learn about green blocks">Green Blocks</a></li>
-					<li><a href="about.php" title="About the page">About</a></li>
-				</ul>
-			</nav>
-<!-- STEP 4a: Let's build a list of hyperlinks inside the above NAV element linking this page to other pages in the site - create an unordered list element (UL) -->
-<!-- STEP 4b: Create a list item inside the UL (LI) -->
-<!-- STEP 4c: Insert an A element inside the LI, and add an href that points to the HTML page 'red.php' - include also some text for the hyperlink -->
-<!-- STEP 4d: Add an appropriate title attribute value for the A element, upload the changed page and try it out in a browser - proceed next to open up red.php in your code editor for STEP 5 -->
-<!-- STEP 6: Build a link on this page to index.php (it might seem silly), so that the navigation is consistent from page-to-page - this is very important when building global navigation for Web apps from a usability perspective -->
-<!-- STEP 7: Include navigation links for the pages blue.php and yellow.php - make sure all NAV elements on all pages are the same - upload your files and test your work -->
+<!-- STEP 1: Cut the NAV element code below out of this file and onto your clipboard -->
+<!-- STEP 2: Open the file 'global-nav.php' inside the new folder called 'includes' and look for STEP 3 -->
+<!-- STEP 6: Add some PHP delimiters so that we can do some programming that will run on the server just below this comment -->
+<?php
+	include("includes/global-nav.php");
+?>
+
+<?php
+	include("includes/footer-nav.php");
+?>
+<!-- STEP 7: Inside the above PHP code delimiters, add the include or require statement, followed by the server path to nav.php - we need the $_SERVER['DOCUMENT_ROOT'] as well as the directory path to the file, which is '\includes\global-nav.php' - upload index.php to the server and test it in the browser -->
+<!-- STEP 8: Remove EVERY instance of the NAV element inside the HEADER in every page on the site and replace it with the above PHP - upload all the updated files and test them in your browser -->
+<!-- STEP 9: Why would we go to all this trouble? Let's add a new link to the global navigation system by editing one single file, and having all site pages reflect this change - open up global-nav.php again in your code editor and proceed to STEP 10 -->
 		</header>
 		<!-- Page-level main content -->
 		<main>
@@ -67,15 +63,8 @@
 				</form>
 				<figure>
 					<img src="images/mini-figure.png" width="176" height="285" alt="Mini figure">
-<!-- STEP 1a: Build an A (anchor) element that surrounds the word 'LEGO®' inside the FIGCAPTION below -->
 					<figcaption><a href="https://www.lego.com/" rel="external" title="Visit the offical LEGO® Web site">LEGO®</a> mini figure by Vanja (Public Domain)</figcaption>
 					<!-- Mini figure by Vanja (Public Domain) https://openclipart.org/detail/224315/clip-is-a-brick-minifig-4 -->
-<!-- STEP 1b: Add an href attribute with the value set to the URL, "https://www.lego.com/" -->
-<!-- STEP 1c: Since the link is pointing to somewhere other than this Web site, it is an external URL - as such, add rel="external" to the above A element start tag -->
-<!-- STEP 1d: To add additional accessibility, add a useful title attribute as well with a short phrase describing the purpose of the hyperlink -->
-<!-- STEP 2a: Upload this entire folder of files to a Web server and browse to the page in a browser -->
-<!-- STEP 2b: How does the hyperlink text appear differently than the rest of the page? Click on the link, then click on the 'Back' button on your browser - how does the same link appear now? -->
-<!-- STEP 2c: Look at your browsing history for this particular link - then clear your history and reload the page - notice how the link is restored - this is wayfinding -->
 				</figure>
 				<h3>Did You Know…?</h3>
 				<p>One of the most important components of effective life-long learning is <em>play</em>. Learning a new skill (like Web development) should include a certain amount of play. Renowned children’s programming entertainer Mr. Rogers certainly knew about the value that play represented:</p>
@@ -88,17 +77,9 @@
 		</main>
 		<!-- Page-level footer -->
 		<footer>
-<!-- STEP 8a: Create a NAV element in the FOOTER for the legal stuff -->
-			<nav>
-				<a href="about/privacy-policy.php" title="Read our Privacy Policy">Privacy Policy</a> | <a href="about/privacy-policy.php#personal-information" title="Learn about how we treat your personal information">Use of Personal Information</a>
-				<a href="about/terms-of-use.php" title="Read our terms ouf use">Terms of use</a>
-				<a href="about/terms-of-use.php#limitation-liability" title="Read our terms ouf use liability">Terms of use liability</a>
-			</nav>
-<!-- STEP 8b: Build a link to the page 'Privacy Policy' - note that the href will need to be a relative path that points from this page, down into the 'about' folder -->
-<!-- STEP 8c: Construct a second link that takes the visitor to the element with the id="personal-information" on the very same page, by appending the id value to the URL with a hash symbol (#personal-information) - this is called page-level navigation -->
-<!-- STEP 8d: Try it in your browser, then proceed to about/privacy-policy.php in your code editor for the next step -->
-<p><small>© HTML, CSS, and JS Blocks Inc.</small></p>
-
+			<!-- Fine print navigation -->
+			
+			<p><small>© HTML, CSS, and JS Blocks Inc.</small></p>
 		</footer>
 	</body>
 </html>
